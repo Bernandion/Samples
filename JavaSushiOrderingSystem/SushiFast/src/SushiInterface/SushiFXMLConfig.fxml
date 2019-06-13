@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="configBox" prefHeight="676.0" prefWidth="539.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SushiInterface.ConfigController">
+   <children>
+      <HBox>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="System Data">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#applyChanges" prefHeight="33.0" prefWidth="64.0" text="Apply">
+               <HBox.margin>
+                  <Insets left="220.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#closeConfig" prefHeight="33.0" prefWidth="64.0" text="Close">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-x: 40;" text="Table Number" underline="true" wrappingWidth="90.962890625">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="configTableNum" maxWidth="50.0" prefHeight="25.0" prefWidth="50.0" text="1">
+         <VBox.margin>
+            <Insets left="40.0" />
+         </VBox.margin>
+      </TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tax Rate" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="40.0" top="15.0" />
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="configTax" maxWidth="50.0" prefHeight="25.0" prefWidth="50.0" text="0.05">
+         <VBox.margin>
+            <Insets left="40.0" />
+         </VBox.margin>
+      </TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Database Config">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="40.0" top="25.0" />
+         </VBox.margin>
+      </Text>
+      <HBox>
+         <VBox.margin>
+            <Insets top="16.0" />
+         </VBox.margin>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-x: 40;" text="Add Item to Database" underline="true" wrappingWidth="90.962890625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#addItem" prefHeight="30.0" prefWidth="55.0" text="Add">
+               <HBox.margin>
+                  <Insets left="320.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TextField fx:id="itemType" maxWidth="105.0" prefHeight="26.0" prefWidth="105.0" promptText="Item Type">
+         <VBox.margin>
+            <Insets left="40.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="itemName" maxWidth="105.0" prefHeight="25.0" prefWidth="105.0" promptText="Name">
+         <VBox.margin>
+            <Insets left="40.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextArea fx:id="itemDescription" maxWidth="-Infinity" prefHeight="151.0" prefWidth="315.0" promptText="Description">
+         <VBox.margin>
+            <Insets left="40.0" top="10.0" />
+         </VBox.margin>
+      </TextArea>
+      <TextField fx:id="itemPath" maxWidth="-Infinity" prefHeight="25.0" prefWidth="315.0" promptText="Image Path">
+         <VBox.margin>
+            <Insets left="40.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="itemPrice" maxWidth="106.0" prefHeight="25.0" prefWidth="106.0" promptText="Price">
+         <VBox.margin>
+            <Insets left="40.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-x: 40;" text="Remove Item from Database" underline="true" wrappingWidth="90.962890625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#removeItem" prefHeight="30.0" prefWidth="69.0" text="Remove">
+               <HBox.margin>
+                  <Insets left="320.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="16.0" />
+         </VBox.margin>
+      </HBox>
+      <TextField fx:id="itemRemoveID" maxWidth="105.0" prefHeight="26.0" prefWidth="105.0" promptText="Item ID Number">
+         <VBox.margin>
+            <Insets left="40.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+   </children>
+</VBox>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace>
+	<settings>
+		<label>AdventureGame</label>
+		<id>349</id>
+		<version>0</version>
+	</settings>
+	<users>
+		<user>
+			<path>AdventureGame.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>AdventureGame.jcp</path>
+		</project>
+	</projects>
+</workspace>
